@@ -2,11 +2,11 @@ package br.edu.ufca.Conta;
 
 public class Conta {
 
-    String numero;
-    Cliente cliente;
+    private String numero;
+    private Cliente cliente;
     private double saldo;
 
-    Conta(String numero, Cliente cliente){
+    public Conta(String numero, Cliente cliente){
 
         this.numero = numero;
         this.cliente = cliente;
@@ -14,23 +14,23 @@ public class Conta {
 
     }
 
-    Conta(String numero){
+    public Conta(String numero){
 
         this.numero = numero;
 
     }
 
-    Conta(){
+    public Conta(){
 
     }
 
-    void creditar(double valor){
+    public void creditar(double valor){
 
         saldo += valor;
 
     }
 
-    boolean debitar(double valor){
+    public boolean debitar(double valor){
 
         if(valor <= saldo){
 
@@ -44,13 +44,13 @@ public class Conta {
 
     }
 
-    double consultarSaldo(){
+    public double consultarSaldo(){
 
         return saldo;
 
     }
 
-    void transferir(Conta c, double valor){
+    public void transferir(Conta c, double valor){
 
         if(this.debitar(valor)){
 
@@ -75,6 +75,24 @@ public class Conta {
             return true;
 
         return false;
+
+    }
+
+    public String getNumero(){
+
+        return this.numero;
+
+    }
+
+    public Cliente getCliente(){
+
+        return this.cliente;
+
+    }
+
+    public double getSaldo(){
+
+        return this.saldo;
 
     }
     

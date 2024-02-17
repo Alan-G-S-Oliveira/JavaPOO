@@ -17,7 +17,7 @@ public class RepositoriosContasVetor {
         int i = 0;
         boolean adcionou = false;
 
-        if(procurarIndice(conta.numero) == -1){
+        if(procurarIndice(conta.getNumero()) == -1){
 
             while(i < contas.length && !adcionou){
 
@@ -54,7 +54,7 @@ public class RepositoriosContasVetor {
 
     void atualizar(Conta conta){
 
-        int i = procurarIndice(conta.numero);
+        int i = procurarIndice(conta.getNumero());
 
         if(i != -1)
             contas[i] = conta;
@@ -65,7 +65,7 @@ public class RepositoriosContasVetor {
 
     void remover(Conta conta){
 
-        int i = procurarIndice(conta.numero);
+        int i = procurarIndice(conta.getNumero());
         if(i != -1)
             contas[i] = null;
         else
@@ -77,7 +77,7 @@ public class RepositoriosContasVetor {
 
         for(int i = 0; i < contas.length; i++){
 
-            if(contas[i] != null && contas[i].numero.equals(numero))
+            if(contas[i] != null && contas[i].getNumero().equals(numero))
                 return i;
 
         }
