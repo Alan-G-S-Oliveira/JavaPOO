@@ -33,9 +33,9 @@ public class Teste {
         //Permanece no laço enquanto os valores 1 ou 2 não forem digitados.
         do{
 
-            System.out.println("--------------------------------------------------------------------");
-            System.out.println("                    CAMPEONATO BRASILEIRO DE 2024                   ");
-            System.out.println("--------------------------------------------------------------------");
+            System.out.println("---------------------------------------------------------------------");
+            System.out.println("                    CAMPEONATO BRASILEIRO DE 2024                    ");
+            System.out.println("---------------------------------------------------------------------");
 
             System.out.println("\nAperte:\n1 - Para iniciar a competição.\n2 - Para sair.");
 
