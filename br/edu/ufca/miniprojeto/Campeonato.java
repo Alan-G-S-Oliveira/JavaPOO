@@ -145,7 +145,7 @@ public class Campeonato {
 
     /*
      * Ordena os times em ordem não decrescente usando o algoritmo de
-     * SelectionSort, com a única diferença que quando os pontos de
+     * BubbleSort, com a única diferença que quando os pontos de
      * clubes[i] forem igual aos de clubes[j] ele verifica os saldo
      * de gols para fazer ou não a troca.
      */
